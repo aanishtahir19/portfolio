@@ -1,6 +1,15 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+$global-font : Rubik, 'sans-serif';
+
+// Colors
+$main-color: #f8f8f8;
+$sec-color:#212121;
+
 // Global Rules
 *{
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+
