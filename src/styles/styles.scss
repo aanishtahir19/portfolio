@@ -1,15 +1,130 @@
+// Variables
+$global-font : Rubik, 'sans-serif';
+
+
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-$global-font : Rubik, 'sans-serif';
+
+
+
 
 // Colors
 $main-color: #f8f8f8;
 $sec-color:#212121;
 
 // Global Rules
-*{
+*{  
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Time New Roman','Rubik', sans-serif !important;
+}
+.font-text{
+    font-size: 1rem;
+}
+.font-main-heading{
+    font-size:2.5rem;
+    font-weight: 700;
+}
+.font-title{
+    font-size: 3.5rem;
+    font-weight:800;
+    span{
+        font-size:3.125rem;
+        font-weight: 500;
+    }
+}
+.font-heading{
+    font-size:2rem;
+}
+.font-menu{
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
 
+
+// Navbar
+nav{
+    color:black;
+    height: 15vh;
+    img{
+        width: 100px;
+    }
+}
+.navbar .navbar-nav .nav-link{
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    padding: 0;
+}
+.navbar-nav .nav-item{
+    padding: 0 1rem;
+}
+
+.navbar .navbar-nav .nav-item a:after{
+    
+    content: " ";
+	background: #000;
+	width: 0%;
+	height: 2px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transition:all ease 0.4s;
+}
+.navbar .navbar-nav .nav-item:hover a:after{
+    width:100%;
+	width:50%;
+}
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 12px;
+    }
+    body{
+        .navbar{
+            height: 5vh;
+            .navbar-brand{
+                img{
+                    width:50px;
+                }
+            }
+        }
+        #main{
+            padding: 0 15px;
+        }
+    }
+}
+
+
+// Main
+main{
+    height: 85vh;
+    .social-links{
+        margin-top: 90px;
+        .row{
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            justify-content:space-between ;
+            li{
+                i::after{
+                    width: 30px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 567px){
+        .social-links{
+            margin-top: 20px;
+            justify-items: center;
+            .row{
+                width: 100%;
+            }
+        }
+    }
+}
