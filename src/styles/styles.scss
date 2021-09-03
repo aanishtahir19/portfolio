@@ -1,7 +1,7 @@
 // Variables
 $global-font : Rubik,
 'sans-serif';
-$section-top-margin: 8rem;
+
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
@@ -60,7 +60,13 @@ body {
     color: grey;
 }
 .mt-section{
-    margin-top: $section-top-margin;
+    margin-top: 8rem;
+}
+@media screen and (max-width:567px) {
+    .mt-section{
+        margin-top: 4rem;
+    }
+    
 }
 
 // Navbar
@@ -174,7 +180,7 @@ main {
 
 @media screen and (max-width: 567px) {
     #work {
-        margin-top: 170px;
+        margin-top: 50px;
         text-align: center;
         padding: 0 40px;
     }

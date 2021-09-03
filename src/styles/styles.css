@@ -51,6 +51,12 @@ body {
   margin-top: 8rem;
 }
 
+@media screen and (max-width: 567px) {
+  .mt-section {
+    margin-top: 4rem;
+  }
+}
+
 nav {
   color: black;
   height: 15vh;
@@ -143,7 +149,7 @@ main .social-links ul li i::after {
 
 @media screen and (max-width: 567px) {
   #work {
-    margin-top: 170px;
+    margin-top: 50px;
     text-align: center;
     padding: 0 40px;
   }
