@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Time New Roman','Rubik', sans-serif !important;
+  font-family: 'Time New Roman', 'Rubik', sans-serif !important;
 }
 
 .font-text {
@@ -34,7 +34,7 @@ body {
 }
 
 .font-heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .font-menu {
@@ -141,6 +141,30 @@ main .social-links ul li i::after {
     margin-top: 170px;
     text-align: center;
     padding: 0 40px;
+  }
+}
+
+#skills {
+  height: 100vh;
+}
+
+#skills .row {
+  margin-top: 5rem;
+}
+
+#skills .row [class*="col-"] {
+  margin-bottom: 3.75rem;
+}
+
+@media screen and (max-width: 567px) {
+  #skills .row {
+    margin-top: 3rem;
+  }
+  #skills .row [class*="col-"] {
+    margin-bottom: 2rem;
+  }
+  #skills #sub-skills {
+    width: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

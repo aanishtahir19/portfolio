@@ -1,5 +1,6 @@
 // Variables
-$global-font : Rubik, 'sans-serif';
+$global-font : Rubik,
+'sans-serif';
 
 
 // Fonts
@@ -13,87 +14,103 @@ $main-color: #f8f8f8;
 $sec-color:#212121;
 
 // Global Rules
-*{  
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-html{
+
+html {
     font-size: 16px;
 }
-body{
-    font-family: 'Time New Roman','Rubik', sans-serif !important;
+
+body {
+    font-family: 'Time New Roman', 'Rubik', sans-serif !important;
 }
-.font-text{
+
+.font-text {
     font-size: 1rem;
 }
-.font-main-heading{
-    font-size:2.5rem;
+
+.font-main-heading {
+    font-size: 2.5rem;
     font-weight: 700;
 }
-.font-title{
+
+.font-title {
     font-size: 3.5rem;
-    font-weight:800;
-    span{
-        font-size:3.125rem;
+    font-weight: 800;
+
+    span {
+        font-size: 3.125rem;
         font-weight: 500;
     }
 }
-.font-heading{
-    font-size:2rem;
+
+.font-heading {
+    font-size: 1.5rem;
 }
-.font-menu{
+
+.font-menu {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
 }
 
 
 // Navbar
-nav{
-    color:black;
+nav {
+    color: black;
     height: 15vh;
-    img{
+
+    img {
         width: 100px;
     }
 }
-.navbar .navbar-nav .nav-link{
+
+.navbar .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 1);
     position: relative;
     padding: 0;
 }
-.navbar-nav .nav-item{
+
+.navbar-nav .nav-item {
     padding: 0 1rem;
 }
 
-.navbar .navbar-nav .nav-item a:after{
-    
+.navbar .navbar-nav .nav-item a:after {
+
     content: " ";
-	background: #000;
-	width: 0%;
-	height: 2px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	transition:all ease 0.4s;
+    background: #000;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: all ease 0.4s;
 }
-.navbar .navbar-nav .nav-item:hover a:after{
-    width:100%;
-	width:50%;
+
+.navbar .navbar-nav .nav-item:hover a:after {
+    width: 100%;
+    width: 50%;
 }
+
 @media screen and (max-width: 576px) {
-    html{
+    html {
         font-size: 12px;
     }
-    body{
-        .navbar{
+
+    body {
+        .navbar {
             height: 5vh;
-            .navbar-brand{
-                img{
-                    width:50px;
+
+            .navbar-brand {
+                img {
+                    width: 50px;
                 }
             }
         }
-        #main{
+
+        #main {
             padding: 0 15px;
         }
     }
@@ -101,28 +118,34 @@ nav{
 
 
 // Main
-main{
+main {
     height: 85vh;
-    .social-links{
+
+    .social-links {
         margin-top: 90px;
-        .row{
+
+        .row {
             width: 100%;
         }
-        ul{
+
+        ul {
             display: flex;
-            justify-content:space-between ;
-            li{
-                i::after{
+            justify-content: space-between;
+
+            li {
+                i::after {
                     width: 30px;
                 }
             }
         }
     }
-    @media screen and (max-width: 567px){
-        .social-links{
+
+    @media screen and (max-width: 567px) {
+        .social-links {
             margin-top: 20px;
             justify-items: center;
-            .row{
+
+            .row {
                 width: 100%;
             }
         }
@@ -131,21 +154,53 @@ main{
 
 
 // Work
-#work{
+#work {
     height: 100vh;
-    .work-items{
-        .work-item{
-            p{
+
+    .work-items {
+        .work-item {
+            p {
                 text-align: justify;
             }
         }
     }
 }
+
 @media screen and (max-width: 567px) {
-    #work{
+    #work {
         margin-top: 170px;
         text-align: center;
         padding: 0 40px;
     }
-    
+
+}
+
+// Skills
+#skills {
+    height: 100vh;
+
+    // padding-top: 10%;
+    .row {
+        margin-top: 5rem;
+
+        [class*="col-"] {
+            margin-bottom: 3.75rem;
+        }
+    }
+
+    @media screen and (max-width: 567px) {
+        .row {
+            margin-top: 3rem;
+
+            [class*="col-"] {
+                margin-bottom: 2rem;
+            }
+        }
+
+        #sub-skills {
+            width: 30px;
+        }
+
+
+    }
 }
